@@ -16,8 +16,8 @@
     <param name="semi2dense_ratio" value="1"/>
 
     <!-- if using synchronize image and pose-->
-    <remap from="~image" to="/mv_25001498/image_raw" />
-    <remap from="~posestamped" to="/vins_estimator/camera_pose" />
-
+    <remap from="~image" to="/image_converter/output_image" />
+    <remap from="~posestamped" to="/odom2pose/PoseStamped" />
   </node>   
 </launch>
+
